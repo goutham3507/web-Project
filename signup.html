@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up Page</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="validation.js"></script>
+</head>
+<body>
+  <div class="signup-form">
+    <h1>Sign-Up</h1>
+    <p>Please fill in the form to create an account</p>
+    <hr>
+    <form id="signup" action="signup_submit.php" method="post" onsubmit="validateForm(event)">
+      <div>
+        <p id="usernameErr" class="errMsg"></p>
+        <input type="text" id="username" name="user" placeholder="Username" maxlength="10" required>
+      </div>
+      <div>
+        <p id="emailErr" class="errMsg"></p>
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
+      </div>
+      <div>
+        <p id="passwordErr" class="errMsg"></p>
+        <input type="password" name="pass" id="password" placeholder="Password"  maxlength="10" required>
+      </div>
+      <div>
+        <p id="confirmPassErr" class="errMsg"></p>
+        <input type="password" name="re-pass" id="confirmPassword" placeholder="Confirm Password" maxlength="10" required>
+      <div>
+        <input type="checkbox" required> I accept the <a href="#">Term of User</a> & <a href="#">Privacy Policy</a>
+      </div>
+      <div id="submit">
+        <input type="submit" name="submit" id="submit" value="Sign Up">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

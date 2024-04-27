@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Add some padding to the body */
+    ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+}
+
+#grid-container {
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.property-container, .property-container-view {
+    width: 300px; /* Same width as the login container */
+    height: 350px; /* Adjusted height */
+    background-color: #fff;
+    margin: 15px 10px; /* Adjust the margin as needed */
+    padding: 20px; /* Add padding for content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.property-image-container, .property-image-container-view {
+    height: 200px;
+    width: 250px;
+    margin-left: 25px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.property-container, .property-image-container, .property-container p, .property-container b {
+    cursor: pointer;
+}
+
+.property-container {
+    border: 2px solid black;
+    transition: 0.1s;
+}
+
+.property-container:hover {
+    border: 2px solid red;
+}
+
+.property-container-view {
+    margin: auto;
+    margin-top: 60px;
+    width: 75%;
+    min-height: 500px;
+    height: auto;
+}
+
+.property-image-container-view {
+    height: 300px;
+    width: 400px;
+    /* Firefox */
+    margin-left: -moz-calc(50% - 200px);
+    /* WebKit */
+    margin-left: -webkit-calc(50% - 200px);
+    /* Opera */
+    margin-left: -o-calc(50% - 200px);
+    /* Standard */
+    margin-left: calc(50% - 200px);
+}
+
+.add-property-button {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 4px;
+    height: 40px;
+    width: 40px;
+    background-color: #4e4caf;
+    position: absolute;
+    top: 20px;
+    right: 130px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+#add-property-label, .add-property-button {
+    cursor: pointer;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    margin: 0;
+    color: #333;
+}
+
+.logout-button {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    height: 40px;
+    min-width: 60px;
+    border: 1px solid black;
+}
+
+#logout, .logout-button {
+    background-color: #4e4caf;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#logout {
+    border: none;
+    height: 100%;
+}
+
+#delete-button, #edit-button, #delete-button input {
+    font-size: 20px;
+    text-align: center;
+}
+
+#delete-button, #edit-button, #dashboard-button{
+    border-radius: 4px;
+    height: 40px;
+    min-width: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+    border: 1px solid black;
+}
+
+#delete-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#delete-button input {
+    border: none;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+}
+
+#delete-button, #delete-button input {
+    background-color: rgb(140, 0, 255);
+}
+
+#edit-button, #dashboard-button {
+    position: absolute;
+    top: 20px;
+    background-color: cornflowerblue;
+}
+
+#edit-button {
+    right: 120px;
+}
+
+#dashboard-button {
+    left: 20px;
+}
+
+#delete-button, #delete-button input, #edit-button, #edit-button b, #dashboard-button, #dashboard-button b {
+    cursor: pointer;
+}

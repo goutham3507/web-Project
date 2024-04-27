@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #04AA6D;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.form-container {
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.7);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  border: 2px solid rgba(255,255,255,0.1);
+  max-width: 100%;
+}
+
+.about-container {
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.7);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  border: 2px solid rgba(255,255,255,0.1);
+  max-width: 100%;
+}
+
+.header {
+  padding: 20px 40px;
+}
+
+.header h1{
+  padding-bottom: 10px;
+  margin:0;
+}
+
+.form-box {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-container form{
+  padding: 30px 40px;
+}
+.form-box label{
+  display: inline-flex;
+  margin-bottom: 5px;
+}
+.form-box input {
+  width: 100%;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  display: block;
+  padding: 10px;
+}
+
+.form-box input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-box input[type=submit] {
+  color: white;
+  font-weight: bold;
+  padding: 10px 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: blue;
+  opacity: 0.8;
+  border: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.form-box input[type=submit]:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.form-box p {
+  text-align: center;
+}
+
+.form-box small {
+  font-size: 14px;
+  color: red;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.form-box select {
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-box select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.remember {
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.errMsg {
+  color: red;
+  font-size: small;
+  text-align: end;
+  margin-bottom: 20px;
+  border: 1px solid red;
+  background-color: lightcoral;
+}
+
+.logo {
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.logo img {
+  width: 100%;
+  height: 120px;
+}
+
+.card-container {
+  width: 1100px;
+}
+.card {
+  width: 300px;
+
+}
+.image {
+  width: 300px;
+}
+
+.image img {
+  width: 100%;
+}

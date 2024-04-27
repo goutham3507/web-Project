@@ -1,0 +1,60 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+#form-container {
+    margin-top: 30px;
+    width: 75%; /* Same width as the login container */
+    min-width: 400px;
+    background-color: #fff;
+    margin: 0 10px; /* Adjust the margin as needed */
+    padding: 20px; /* Add padding for content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    padding: 5px 8px;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#submit, #cancel {
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+    padding: 6px 10px;
+}
+
+#submit {
+    background-color: rgb(129, 173, 255);
+}
+
+
+#submit:hover {
+    background-color: rgba(129, 173, 255, 0.8);
+}
+
+#submit:hover, #cancel:hover {
+    cursor: pointer;
+}
+
+#cancel {
+    font-size: 1.1rem;
+    background-color: rgb(253, 100, 100);
+}
+
+#cancel:hover {
+    background-color: rgba(253, 100, 100, 0.8);
+}
